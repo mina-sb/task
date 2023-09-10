@@ -1,5 +1,5 @@
 import React from 'react'
-import img from "../../assets/saly-1.png";
+import img from "../../assets/Group 6.png";
 import Button from '../UIElements/Button';
 
 
@@ -8,7 +8,7 @@ const DesignToCode = () => {
     <section className="flex flex-col items-start lg:flex-row justify-between mx-8 md:mx-16 xl:mx-40">
       <div className="basis-5/12 mt-20">
         <h1
-          className={`text-4xl font-extrabold mt-6 text-slate-800 leading-normal`}
+          className={`text-4xl font-extrabold mt-8 text-slate-800 leading-normal`}
         >
           From
           <span className="text-[#356dff]"> design </span> your to
@@ -28,8 +28,7 @@ const DesignToCode = () => {
       </div>
       <div className="basis-7/12 	">
         <div className="relative">
-          <div className="absolute w-8/12	 aspect-square rounded-full bg-blue-300	top-20 inset-x-1/3"></div>
-          <div className="z-50 w-aut top-0 relative ">
+          <div className="z-50 w-aut top-0 relative mt-20 mx-6">
             <img src={img} />
           </div>
         </div>
