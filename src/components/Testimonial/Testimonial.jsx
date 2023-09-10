@@ -21,41 +21,33 @@ const Testimonial = () => {
   
 
 
-    const [slidesPerView, setSlidesPerView] = useState(3); // Default to 2 slides on small screens
+      const [slidesPerView, setSlidesPerView] = useState(2); 
 
-    useEffect(() => {
-      // Update slidesPerView based on screen size
-      const handleResize = () => {
-        if(window.innerWidth < 500) {
+      useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth >= 860) {
+            setSlidesPerView(4);
+          } else if (window.innerWidth >= 760) {
+            setSlidesPerView(3);
+          } else if (window.innerWidth >= 500) {
+            setSlidesPerView(2);
+          } else if (window.innerWidth >= 470) {
             setSlidesPerView(1);
-        }
-        else if (window.innerWidth >= 500) {
-          // Use 4 slides on large screens (screens wider or equal to 768px)
-          setSlidesPerView(2);
-        } else if (window.innerWidth >= 600) {
-          // Use 2 slides on small screens
-          setSlidesPerView(3);
-        }
-      };
-      console.log(slidesPerView);
+          }
+        };
 
-      // Add event listener for window resize
-      window.addEventListener("resize", handleResize);
+        window.addEventListener("resize", handleResize);
 
-      // Call handleResize initially
-      handleResize();
+        handleResize();
 
-      // Clean up the event listener when the component unmounts
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }, []);
-
-
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+      }, []);
 
   return (
     <section className=" py-12  text-center ">
-      <div className="bg-sky-50 rounded-2xl	absolute w-11/12 h-[660px]		mx-12 box-border">
+      <div className="bg-sky-50 rounded-2xl	absolute w-10/12 h-[660px]  ml-10 mr-8 lg:ml-28 lg:mr-24 box-border">
         <h2 className=" text-orange-500 bg-orange-100  mt-8 rounded-full text-md px-6 py-2 font-semibold inline-block">
           Testimonials
         </h2>
@@ -68,12 +60,12 @@ const Testimonial = () => {
         </h3>
         <br />
         <h3
-          className={`text-[2.6rem] font-extrabold mt-6 text-slate-800 leading-normal inline-block`}
+          className={`text-[2.6rem] -ml-16 font-extrabold text-slate-800 leading-normal inline-block`}
         >
           of clients
         </h3>
-        <div className="inline-block ml-4">
-          <ul className="flex relative">
+        <div className="inline-block ml-2 mt-4">
+          <ul className="flex relative ">
             <li>
               <img
                 src={user1}
@@ -115,7 +107,7 @@ const Testimonial = () => {
           }}
         >
           <SwiperSlide>
-            <div className={`${styles.resslide}`}>
+            <div className={`${styles.resslide} mx-[6rem] md:mx-0`}>
               <Card style="py-6 px-10">
                 <h4 className="text-base font-bold my-4 text-left">
                   Product Design
@@ -140,7 +132,7 @@ const Testimonial = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className={`${styles.resslide}`}>
+            <div className={`${styles.resslide} mx-[6rem] md:mx-10`}>
               <Card style="py-6 px-10">
                 <h4 className="text-base font-bold my-4 text-left">
                   Product Design
@@ -165,7 +157,7 @@ const Testimonial = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className={`${styles.resslide}`}>
+            <div className={`${styles.resslide} mx-[6rem]  md:mx-[5rem]`}>
               <Card style="py-6 px-10">
                 <h4 className="text-base font-bold my-4 text-left">
                   Product Design
@@ -190,7 +182,32 @@ const Testimonial = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className={`${styles.resslide}`}>
+            <div className={`${styles.resslide} mx-[6rem] md:mx-[7.5rem]`}>
+              <Card style="py-6 px-10">
+                <h4 className="text-base font-bold my-4 text-left">
+                  Product Design
+                </h4>
+                <p className="text-justify text-xs">
+                  There’s no other program that walks you through exactly what
+                  you need to know to start an online store fast, written by
+                  someone who has built several 7-figure ecommerce businesses
+                  from scratch.
+                </p>
+                <div className="flex mt-6 items-center">
+                  <img src={user1} className="w-12 " />
+                  <div className="ml-3">
+                    <h4 className="text-sm font-bold text-left">
+                      Product Design
+                    </h4>
+                    <p className="text-justify text-xs">There’s</p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className={`${styles.resslide} mx-[6rem] md:mx-[10rem]`}>
               <Card style="py-6 px-10">
                 <h4 className="text-base font-bold my-4 text-left">
                   Product Design
