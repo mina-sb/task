@@ -9,7 +9,6 @@ import Button from '../UIElements/Button';
 const Blog = () => {
   return (
     <div className="mt-24 text-center">
-      {" "}
       <h4 className=" text-orange-500 bg-orange-100  mt-8 rounded-full text-md px-6 py-2 font-semibold inline-block">
         Blog
       </h4>
@@ -19,8 +18,8 @@ const Blog = () => {
         <span className="text-[#356dff]">Knowledge </span>
         Hub
       </h3>
-      <div className="flex mx-36 mt-10">
-        <Card style="mx-6 px-3 py-3">
+      <div className="flex flex-col justify-center items-center md:flex-row mx-16 lg:mx-36 mt-10">
+        <Card style="mx-6 px-3 py-3 mt-4">
           <img src={blog1} />
           <h4 className="text-base font-bold my-6 ml-1 text-left">
             How A Website Growths your Business
@@ -30,7 +29,7 @@ const Blog = () => {
             <i class="bx bx-right-arrow-alt text-xl rounded-full px-3 py-2 text-slate-800 ml-2 border-gray-100	border-2 "></i>{" "}
           </div>
         </Card>
-        <Card style="mx-6 px-2.5 py-3">
+        <Card style="mx-6 px-2.5 py-3 mt-4">
           <img src={blog2} />
           <h4 className="text-base font-bold my-6 ml-1 text-left">
             How A Website Growths your Business
@@ -40,7 +39,7 @@ const Blog = () => {
             <i class="bx bx-right-arrow-alt text-xl rounded-full px-3 py-2 text-white ml-2  bg-[#356dff] "></i>{" "}
           </div>
         </Card>
-        <Card style="mx-6 px-2.5 py-3">
+        <Card style="mx-6 px-2.5 py-3 mt-4">
           <img src={blog3} />
           <h4 className="text-base font-bold my-6 ml-1 text-left">
             How A Website Growths your Business
