@@ -35,13 +35,13 @@ const MainHeader = () => {
       </div>
       <NavLinks />
       <div>
-        <a className="border-gray-50 rounded-full border-2 text-xs px-4 py-2 hidden md:inline-block">
+        <a className="border-gray-50 rounded-full border-2 text-xs px-4 py-2 hidden md:inline-block hover:cursor-pointer hover:bg-[#356dff] hover:text-white ease-in duration-300">
           Download App
         </a>
-        <a className="bg-slate-900	border-slate-900 ml-2 text-white rounded-full border-2 text-xs px-4 py-2">
+        <a className="bg-slate-900	border-slate-900 ml-2 text-white rounded-full border-2 text-xs px-4 py-2 hover:cursor-pointer hover:bg-[#356dff] hover:border-[#356dff] hover:text-white ease-in duration-300">
           Let's Discuss
         </a>
-        <a className="bg-slate-900	border-slate-900 ml-2 pt-2	 text-white rounded-full border-2 text-xs px-4 py-2 lg:hidden">
+        <a className="bg-slate-900	border-slate-900 ml-2 pt-2	 text-white rounded-full border-2 text-xs px-4 py-2 lg:hidden hover:cursor-pointer">
           <i class="bx bx-menu text-md"></i>
         </a>
       </div>
