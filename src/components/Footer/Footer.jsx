@@ -3,14 +3,16 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-      <div className="flex  mx-8 md:mx-16 xl:mx-48">
+      <div className="flex flex-col gap-x-7	 md:flex-row  mx-8 md:mx-16 xl:mx-48">
         <div className="basis-1/2 text-left mb-16">
           <span className=" text-orange-500 bg-orange-100  mt-8 rounded-full text-md px-6 py-2 font-semibold inline-block">
             Contact Us
           </span>
           <br />
-          <span className="text-4xl mt-8 inline-block">Hello@Startup.com</span>
-          <i class="bx bx-right-arrow-alt text-xl rounded-full px-3 py-2 -rotate-45 text-white bg-[#356dff] ml-12"></i>
+          <span className="text-2xl lg:text-4xl mt-8 inline-block">
+            Hello@Startup.com
+          </span>
+          <i class="bx bx-right-arrow-alt text-base lg:text-xl rounded-full px-3 py-2 -rotate-45 text-white bg-[#356dff] ml-12"></i>
           <div className="flex mt-8 items-center">
             <p className="text-justify text-xs inline-block">Social Media</p>
             <ul className="flex ml-6">
