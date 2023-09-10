@@ -4,6 +4,7 @@ import AboveTheFold from './components/AboveTheFold/AboveTheFold'
 import Features from './components/Features/Features'
 import DesignToCode from './components/designToCode/designToCode'
 import Testimonial from './components/Testimonial/Testimonial'
+import Blog from './components/Blog/Blog'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Features />
       <DesignToCode />
       <Testimonial />
+      <Blog />
     </>
   )
 }
