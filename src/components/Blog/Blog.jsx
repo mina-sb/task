@@ -18,7 +18,7 @@ const Blog = () => {
         <span className="text-[#356dff]">Knowledge </span>
         Hub
       </h3>
-      <div className="flex flex-col justify-center items-center md:flex-row mx-16 lg:mx-36 mt-10">
+      <div className="flex flex-col justify-center items-center md:flex-row mx-8 lg:mx-36 mt-10">
         <Card style="mx-6 px-3 py-3 mt-4">
           <img src={blog1} />
           <h4 className="text-base font-bold my-6 ml-1 text-left">
