@@ -6,6 +6,7 @@ import DesignToCode from './components/designToCode/designToCode'
 import Testimonial from './components/Testimonial/Testimonial'
 import Blog from './components/Blog/Blog'
 import FireUp from './components/FireUp/FireUp'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Testimonial />
       <Blog />
       <FireUp />
+      <Footer />
     </>
   )
 }
