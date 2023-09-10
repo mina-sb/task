@@ -26,7 +26,7 @@ const Blog = () => {
           </h4>
           <div className="flex justify-between items-center">
             <p className="text-justify text-xs">7 min read · September 12</p>
-            <i class="bx bx-right-arrow-alt text-xl rounded-full px-3 py-2 text-slate-800 ml-2 border-gray-100	border-2 "></i>{" "}
+            <i class="bx bx-right-arrow-alt text-xl rounded-full px-3 py-2 text-slate-800 ml-2 border-gray-100	border-2 duration-300 hover:cursor-pointer hover:bg-slate-900 hover:text-white"></i>{" "}
           </div>
         </Card>
         <Card style="mx-6 px-2.5 py-3 mt-4">
@@ -36,7 +36,7 @@ const Blog = () => {
           </h4>
           <div className="flex justify-between items-center">
             <p className="text-justify text-xs">7 min read · September 12</p>
-            <i class="bx bx-right-arrow-alt text-xl rounded-full px-3 py-2 text-white ml-2  bg-[#356dff] "></i>{" "}
+            <i class="bx bx-right-arrow-alt text-xl rounded-full px-3 py-2 text-white ml-2  bg-[#356dff] duration-300 hover:cursor-pointer hover:bg-slate-900 hover:text-white"></i>{" "}
           </div>
         </Card>
         <Card style="mx-6 px-2.5 py-3 mt-4">
@@ -46,7 +46,7 @@ const Blog = () => {
           </h4>
           <div className="flex justify-between items-center">
             <p className="text-justify text-xs">7 min read · September 12</p>
-            <i class="bx bx-right-arrow-alt text-xl rounded-full px-3 py-2 text-slate-800 ml-2 border-gray-100	border-2 "></i>{" "}
+            <i class="bx bx-right-arrow-alt text-xl rounded-full px-3 py-2 text-slate-800 ml-2 border-gray-100	border-2 duration-300 hover:cursor-pointer hover:bg-slate-900 hover:text-white"></i>{" "}
           </div>
         </Card>
       </div>
