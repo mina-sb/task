@@ -51,10 +51,7 @@ const Blog = () => {
           </div>
         </Card>
       </div>
-      <Button
-        text="Learn more"
-        style="transparent  border-slate-900 border-2 ml-4 text-slate-900 mt-16"
-      />
+      <Button text="Learn more" outline={true} style="ml-4 mt-16 " />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import img from "../../assets/saly-1.png";
+import img from "../../assets/saly-3.png";
 import {h1} from './AboveTheFold.module.css'
 import Button from '../UIElements/Button';
 
@@ -22,12 +22,9 @@ const AboveTheFold = () => {
         <div className=" mt-8">
           <Button
             text="Let's disccus"
-            style="bg-[#356dff] border-[#356dff] border-2 text-white"
+            style="bg-[#356dff] border-[#356dff] hover:bg-slate-900 hover:border-slate-900"
           />
-          <Button
-            text="Learn more"
-            style="transparent  border-slate-900 border-2 ml-4 text-slate-900"
-          />
+          <Button text="Learn more" outline={true} style="ml-4" />
         </div>
       </div>
       <div className="basis-7/12 	">
