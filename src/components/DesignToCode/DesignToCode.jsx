@@ -5,7 +5,7 @@ import Button from '../UIElements/Button';
 
 const DesignToCode = () => {
   return (
-    <section className="flex flex-col items-start lg:flex-row justify-between mx-8 md:mx-16 xl:mx-40">
+    <section className="flex flex-col items-start md:flex-row justify-between mx-8 md:mx-16 xl:mx-40">
       <div className="basis-5/12 mt-20">
         <h1
           className={`text-4xl font-extrabold mt-8 text-slate-800 leading-normal`}
