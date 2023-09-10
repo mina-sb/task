@@ -5,6 +5,7 @@ import Features from './components/Features/Features'
 import DesignToCode from './components/designToCode/designToCode'
 import Testimonial from './components/Testimonial/Testimonial'
 import Blog from './components/Blog/Blog'
+import FireUp from './components/FireUp/FireUp'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <DesignToCode />
       <Testimonial />
       <Blog />
+      <FireUp />
     </>
   )
 }
