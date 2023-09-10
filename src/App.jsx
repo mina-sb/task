@@ -1,6 +1,9 @@
 import './App.css'
 import MainHeader from './components/Navigation/MainHeader'
 import AboveTheFold from './components/AboveTheFold/AboveTheFold'
+import Features from './components/Features/Features'
+import DesignToCode from './components/designToCode/designToCode'
+import Testimonial from './components/Testimonial/Testimonial'
 
 function App() {
 
@@ -8,7 +11,9 @@ function App() {
     <>
       <MainHeader />
       <AboveTheFold />
-     
+      <Features />
+      <DesignToCode />
+      <Testimonial />
     </>
   )
 }
