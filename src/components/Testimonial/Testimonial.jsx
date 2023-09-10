@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState , useEffect} from 'react'
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -19,6 +19,40 @@ const Testimonial = () => {
       swiper.slidePrev();
   };
   
+
+
+    const [slidesPerView, setSlidesPerView] = useState(3); // Default to 2 slides on small screens
+
+    useEffect(() => {
+      // Update slidesPerView based on screen size
+      const handleResize = () => {
+        if(window.innerWidth < 500) {
+            setSlidesPerView(1);
+        }
+        else if (window.innerWidth >= 500) {
+          // Use 4 slides on large screens (screens wider or equal to 768px)
+          setSlidesPerView(2);
+        } else if (window.innerWidth >= 600) {
+          // Use 2 slides on small screens
+          setSlidesPerView(3);
+        }
+      };
+      console.log(slidesPerView);
+
+      // Add event listener for window resize
+      window.addEventListener("resize", handleResize);
+
+      // Call handleResize initially
+      handleResize();
+
+      // Clean up the event listener when the component unmounts
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+
+
+
   return (
     <section className=" py-12  text-center ">
       <div className="bg-sky-50 rounded-2xl	absolute w-11/12 h-[660px]		mx-12 box-border">
@@ -73,15 +107,15 @@ const Testimonial = () => {
       <div className="mt-72 pb-8 ">
         <Swiper
           className={styles.swiper}
-          slidesPerView={3} // Number of slides to show
-          spaceBetween={95} // Space between slides
-          navigation // Enable navigation arrows
+          slidesPerView={slidesPerView}
+          spaceBetween={40}
+          navigation
           onSwiper={(e) => {
             setSwiper(e);
           }}
         >
           <SwiperSlide>
-            <div className={`resslide leftSlide`}>
+            <div className={`${styles.resslide}`}>
               <Card style="py-6 px-10">
                 <h4 className="text-base font-bold my-4 text-left">
                   Product Design
@@ -105,35 +139,8 @@ const Testimonial = () => {
             </div>
           </SwiperSlide>
 
-          {/* Center Slide 1 */}
-          <SwiperSlide className="resslide centerSlide">
-            <div className=" ">
-              <Card style="py-6 px-10">
-                <h4 className="text-base font-bold my-4 text-left">
-                  Product Design
-                </h4>
-                <p className="text-justify text-xs">
-                  There’s no other program that walks you through exactly what
-                  you need to know to start an online store fast, written by
-                  someone who has built several 7-figure ecommerce businesses
-                  from scratch.
-                </p>
-                <div className="flex mt-6 items-center">
-                  <img src={user1} className="w-12 " />
-                  <div className="ml-3">
-                    <h4 className="text-sm font-bold text-left">
-                      Product Design
-                    </h4>
-                    <p className="text-justify text-xs">There’s</p>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </SwiperSlide>
-
-          {/* Center Slide 2 */}
           <SwiperSlide>
-            <div className="resslide centerSlide">
+            <div className={`${styles.resslide}`}>
               <Card style="py-6 px-10">
                 <h4 className="text-base font-bold my-4 text-left">
                   Product Design
@@ -157,9 +164,33 @@ const Testimonial = () => {
             </div>
           </SwiperSlide>
 
-          {/* Right Half Slide */}
           <SwiperSlide>
-            <div className="resslide rightSlide">
+            <div className={`${styles.resslide}`}>
+              <Card style="py-6 px-10">
+                <h4 className="text-base font-bold my-4 text-left">
+                  Product Design
+                </h4>
+                <p className="text-justify text-xs">
+                  There’s no other program that walks you through exactly what
+                  you need to know to start an online store fast, written by
+                  someone who has built several 7-figure ecommerce businesses
+                  from scratch.
+                </p>
+                <div className="flex mt-6 items-center">
+                  <img src={user1} className="w-12 " />
+                  <div className="ml-3">
+                    <h4 className="text-sm font-bold text-left">
+                      Product Design
+                    </h4>
+                    <p className="text-justify text-xs">There’s</p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className={`${styles.resslide}`}>
               <Card style="py-6 px-10">
                 <h4 className="text-base font-bold my-4 text-left">
                   Product Design
