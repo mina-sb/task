@@ -1,5 +1,8 @@
 import React from 'react'
-import img from "../../assets/saly-1.png";
+import img1 from "../../assets/saly-27.png";
+import img2 from "../../assets/saly-10.png";
+import img3 from "../../assets/saly-13.png";
+import img4 from "../../assets/saly-43.png";
 
 
 function Features() {
@@ -16,42 +19,48 @@ function Features() {
       <div className="flex flex-wrap px-8">
         <div className="basis-full md:basis-1/2 lg:basis-1/4  justify-center px-4 relative">
           <div className="absolute rounded-full w-36 h-36 bg-white left-1/2 transform -translate-x-1/2  top-12 z-0"></div>
-          <div className="relative z-20">
-            <img src={img} />
+          <div className="z-20  justify-center flex relative mt-14">
+            <img src={img1} className="w-36 h-36 " />
           </div>
-          <h4 className="text-base font-bold my-4">Product Design</h4>
-          <p className="text-xs	text-zinc-500">
+          <h4 className="text-base font-extrabold mt-10">Product Design</h4>
+          <p className="text-[0.6rem]	text-zinc-500 mt-4 mx-6">
             Startups typically begin by a founder (solo-founder) or co-founders
+            who have
           </p>
         </div>
         <div className="basis-full md:basis-1/2 lg:basis-1/4 justify-center px-4 relative">
           <div className="absolute rounded-full w-36 h-36 bg-white left-1/2 transform -translate-x-1/2  top-12 z-0"></div>
-          <div className="relative z-20">
-            <img src={img} />
+          <div className="z-20  justify-center flex relative mt-14">
+            <img src={img2} className="w-36 h-36 " />
           </div>
-          <h4 className="text-base font-bold my-4">Product Design</h4>
-          <p className="text-xs	text-zinc-500">
+          <h4 className="text-base font-extrabold mt-10">Branding</h4>
+          <p className="text-[0.6rem]	text-zinc-500 mt-4 mx-6">
             Startups typically begin by a founder (solo-founder) or co-founders
+            who have
           </p>
         </div>
         <div className="basis-full md:basis-1/2 lg:basis-1/4 justify-center px-4 relative">
           <div className="absolute rounded-full w-36 h-36 bg-white left-1/2 transform -translate-x-1/2  top-12 z-0"></div>
-          <div className="relative z-20">
-            <img src={img} />
+          <div className="z-20  justify-center flex relative mt-14">
+            <img src={img3} className="w-36 h-36 " />
           </div>
-          <h4 className="text-base font-bold my-4">Product Design</h4>
-          <p className="text-xs	text-zinc-500">
+          <h4 className="text-base font-extrabold mt-10">
+            Coding & Programming
+          </h4>
+          <p className="text-[0.6rem]	text-zinc-500 mt-4 mx-6">
             Startups typically begin by a founder (solo-founder) or co-founders
+            who have
           </p>
         </div>
         <div className="basis-full md:basis-1/2 lg:basis-1/4 justify-center px-4 relative">
           <div className="absolute rounded-full w-36 h-36 bg-white left-1/2 transform -translate-x-1/2  top-12 z-0"></div>
-          <div className="relative z-20">
-            <img src={img} />
+          <div className="z-20  justify-center flex relative mt-14">
+            <img src={img4} className="w-36 h-36 " />
           </div>
-          <h4 className="text-base font-bold my-4">Product Design</h4>
-          <p className="text-xs	text-zinc-500">
+          <h4 className="text-base font-extrabold mt-10">Online Marketing</h4>
+          <p className="text-[0.6rem]	text-zinc-500 mt-4 mx-6">
             Startups typically begin by a founder (solo-founder) or co-founders
+            who have
           </p>
         </div>
       </div>
