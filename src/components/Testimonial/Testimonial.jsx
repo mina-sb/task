@@ -82,7 +82,7 @@ const Testimonial = () => {
         >
           <SwiperSlide>
             <div className={`resslide leftSlide`}>
-              <Card>
+              <Card style="py-6 px-10">
                 <h4 className="text-base font-bold my-4 text-left">
                   Product Design
                 </h4>
@@ -108,7 +108,7 @@ const Testimonial = () => {
           {/* Center Slide 1 */}
           <SwiperSlide className="resslide centerSlide">
             <div className=" ">
-              <Card>
+              <Card style="py-6 px-10">
                 <h4 className="text-base font-bold my-4 text-left">
                   Product Design
                 </h4>
@@ -134,7 +134,7 @@ const Testimonial = () => {
           {/* Center Slide 2 */}
           <SwiperSlide>
             <div className="resslide centerSlide">
-              <Card>
+              <Card style="py-6 px-10">
                 <h4 className="text-base font-bold my-4 text-left">
                   Product Design
                 </h4>
@@ -160,7 +160,7 @@ const Testimonial = () => {
           {/* Right Half Slide */}
           <SwiperSlide>
             <div className="resslide rightSlide">
-              <Card>
+              <Card style="py-6 px-10">
                 <h4 className="text-base font-bold my-4 text-left">
                   Product Design
                 </h4>
